@@ -1,3 +1,4 @@
+import {INCREMENT, DECREMENT} from './action_types';
 //初始化状态
 let initState = 0;
 //形参初始化，或者叫形参赋值
@@ -6,10 +7,10 @@ export default function countor(preState=initState, action){
     let newState;
     
     switch (type) {
-        case 'increment':
+        case INCREMENT:
             newState = preState + data;
             return newState;
-        case 'decrement':
+        case DECREMENT:
             newState = preState - data;
             return newState;
         default:

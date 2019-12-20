@@ -15,14 +15,15 @@ export default class Counter extends Component {
         const {select_num} = this.refs;
         const {count} = this.props;
         if(count % 2 === 1){
-            this.props.increment(select_num.value*1)
+            this.props.increment(select_num.value*1);
         }
     }
     incrementAsync = ()=>{
         const {select_num} = this.refs;
-        setTimeout(()=>{
+     /*    setTimeout(()=>{
             this.props.increment(select_num.value*1)
-        }, 500);
+        }, 500); */
+        this.props.incrementAsync(select_num.value*1, 500);
     }
 
     render() {

@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import Counter from '../components/counter';
-import {increment, decrement} from '../redux/action_creators';
+import {increment, decrement, incrementAsync} from '../redux/action_creators';
 //完整版
 /* //从redux获取初始化或者加工的状态
 function getReduxStateToProps(state){
@@ -21,5 +21,5 @@ export default connect(getReduxStateToProps, getReduxMethodToProps)(Counter); */
 
 export default connect(
             state => ({count: state}), 
-            {increment, decrement}
+            {increment, decrement, incrementAsync}
             )(Counter);
