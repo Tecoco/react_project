@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import Counter from './components/counter';
+import CounterContainer from './containers/counter_container';
 
 export default class App extends Component {
   render(){
-    const {store} = this.props;
     return (
-      <Counter store={store} />
+      <CounterContainer />
     );
   }
 }
