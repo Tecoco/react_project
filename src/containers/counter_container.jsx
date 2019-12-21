@@ -20,6 +20,6 @@ export default connect(getReduxStateToProps, getReduxMethodToProps)(Counter); */
 //从redux获取dispatch()方法
 
 export default connect(
-            state => ({count: state}), 
+            state => ({count:state.count, persons:state.persons}), 
             {increment, decrement, incrementAsync}
             )(Counter);

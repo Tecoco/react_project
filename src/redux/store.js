@@ -1,7 +1,7 @@
 //创建redux的核心对象---store
 import {createStore, applyMiddleware} from 'redux';
-//引入reducer
-import reducer from './reducers/counter_reducer';
+//引入reducers
+import reducer from './reducers';
 //引入redux-thunk , 用于处理异步action
 import thunk from 'redux-thunk';
 //引入redux-devtools-extension，用于支持redux开发工具

@@ -29,7 +29,7 @@ export default class Counter extends Component {
     render() {
         return (
             <div>
-                <h2>count is: {this.props.count}</h2>
+                <h2>count is: {this.props.count}======统计人数：{this.props.persons.length}</h2>
                 <select ref='select_num'>
                     <option value="1">1</option>
                     <option value="2">2</option>
