@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import {Route,Switch,Redirect} from 'react-router-dom';
-import Login from './pages/login/login';
-import Admin from './pages/admin/admin';
+import React, { Component } from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
+import Login from "./pages/login/login";
+import Admin from "./pages/admin/admin";
 
 export default class App extends Component {
-  render(){
+  render() {
     return (
       <Switch>
-        <Route path='/login' component={Login}/>
-        <Route path='/admin' component={Admin}/>
-        <Redirect to='/login'/>
+        <Route path="/login" component={Login} />
+        <Route path="/admin" component={Admin} />
+        <Redirect to="/login" />
+        <h2>vscode解决冲突问题</h2>
       </Switch>
     );
   }
 }
-
